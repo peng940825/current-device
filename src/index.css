@@ -7,10 +7,10 @@
 
 p {
   color: #fff;
-  font-size: 24px;
-  line-height: 80px;
   text-align: center;
-  letter-spacing: 2px;
+  font-size: 1.25rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.125rem;
   font-family: 'Alkatra', cursive;
 }
 
@@ -18,7 +18,13 @@ svg {
   vertical-align: middle;
 }
 
+span {
+  color: #ffd071;
+}
+
 #root {
-  padding-bottom: 32px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem 0;
   background-color: #242424;
 }

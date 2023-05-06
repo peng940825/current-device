@@ -21,6 +21,9 @@ const App = () => {
         key !== 'onChangeOrientation'
       ) {
         let val = valMap[typeof currentDevice[key]](key);
+        if (typeof val === 'string') {
+          val = <span>{val}</span>;
+        }
         if (typeof val === 'boolean' && val) {
           val = <IconCheck width="32px" height="32px" fill="#31b27c" />;
         }
