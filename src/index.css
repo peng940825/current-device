@@ -5,7 +5,12 @@
   box-sizing: border-box;
 }
 
-p {
+body {
+  background-color: #242424;
+}
+
+p,
+label {
   color: #fff;
   text-align: center;
   font-size: 1.25rem;
@@ -25,6 +30,23 @@ span {
 #root {
   width: 100%;
   min-height: 100vh;
-  padding: 1rem 0;
-  background-color: #242424;
+  padding: 2rem 0;
+}
+
+.file-input-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+label {
+  border: 3px #ffd071 solid;
+  border-radius: 8px;
+  padding: 0 24px;
+  cursor: pointer;
+}
+
+input {
+  display: none;
 }
