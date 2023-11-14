@@ -41,9 +41,54 @@ const App = () => {
 
   return (
     <>
+      <div className="scrolling-wrapper">
+        <button
+          type="button"
+          className="scrolling-button"
+          onClick={() => {
+            document.body.style.overflow = 'hidden';
+            document.body.style.position = 'relative';
+          }}
+        >
+          <p>Stop</p>
+        </button>
+        <button
+          type="button"
+          className="scrolling-button"
+          onClick={() => {
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+          }}
+        >
+          <p>Resume</p>
+        </button>
+      </div>
+
       <div className="file-input-wrapper">
-        <label className="file-input-label" htmlFor="file-input">
-          Upload
+        <label htmlFor="image-only" style={{ borderColor: '#38bdf8' }}>
+          Image Only
+        </label>
+        <input id="image-only" type="file" accept="image/png, image/jpeg" />
+      </div>
+
+      <div className="file-input-wrapper">
+        <label htmlFor="video-only" style={{ borderColor: '#f9a8d4' }}>
+          Video Only
+        </label>
+        <input
+          id="video-only"
+          type="file"
+          accept="video/mp4, video/quicktime"
+        />
+      </div>
+
+      <div className="file-input-wrapper">
+        <label
+          className="file-input-label"
+          htmlFor="file-input"
+          style={{ borderColor: '#c4b5fd' }}
+        >
+          File Type
         </label>
         <input
           type="file"
@@ -55,7 +100,8 @@ const App = () => {
           }}
         />
       </div>
-      <p>File Type：{fileType}</p>
+
+      <p>file type：{fileType}</p>
 
       {data.reverse().map((item) => (
         <p key={item.key}>
