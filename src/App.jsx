@@ -41,29 +41,6 @@ const App = () => {
 
   return (
     <>
-      <div className="scrolling-wrapper">
-        <button
-          type="button"
-          className="scrolling-button"
-          onClick={() => {
-            document.body.style.overflow = 'hidden';
-            document.body.style.position = 'relative';
-          }}
-        >
-          <p>Stop</p>
-        </button>
-        <button
-          type="button"
-          className="scrolling-button"
-          onClick={() => {
-            document.body.style.overflow = '';
-            document.body.style.position = '';
-          }}
-        >
-          <p>Resume</p>
-        </button>
-      </div>
-
       <div className="file-input-wrapper">
         <label htmlFor="image-only" style={{ borderColor: '#38bdf8' }}>
           Image Only

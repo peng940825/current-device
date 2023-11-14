@@ -50,20 +50,3 @@ label {
 input {
   display: none;
 }
-
-.scrolling-wrapper {
-  width: 100%;
-  margin-bottom: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.scrolling-button {
-  border: 3px #78716c solid;
-  border-radius: 8px;
-  padding: 0 24px;
-  background: transparent;
-  margin: 0 16px;
-  cursor: pointer;
-}
